@@ -5,15 +5,15 @@ library(compmus)
 flop_pitch <- read_csv("/Users/sophiacatranis/Desktop/flop_pitch copy.csv")
 flop <- read_csv("/Users/sophiacatranis/Desktop/flop copy.csv")
 
-# ---- FIX SHARPS → FLATS ----
-flop_pitch <- flop_pitch |>
-  rename(
-    Db = `C#`,
-    Eb = `D#`,
-    Gb = `F#`,
-    Ab = `G#`,
-    Bb = `A#`
-  )
+# # ---- FIX SHARPS → FLATS ----
+# flop_pitch <- flop_pitch |>
+#   rename(
+#     Db = `C#`,
+#     Eb = `D#`,
+#     Gb = `F#`,
+#     Ab = `G#`,
+#     Bb = `A#`
+#   )
 
 # ---- CHROMA SELF SIMILARITY ----
 chroma_ssm <- flop_pitch |>
