@@ -1,0 +1,26 @@
+library(tidyverse)
+library(compmus) 
+
+
+flop_tempogram <- read_csv("]", show_col_types = FALSE)
+flop_tempogram <- read_csv("]", show_col_types = FALSE)
+flop_tempogram <- read_csv("]", show_col_types = FALSE)
+
+# Inspect parsing problems if needed
+problems(pata_pata)
+
+# Convert loudness (dB) to energy
+flop_tempogram <- flop_tempogram %>%
+  mutate(energy = 10^(VALUE / 10))
+
+# Compute novelty function (energy difference)
+flop_tempogram <- flop_tempogram %>%
+  mutate(novelty = c(0, diff(energy)))
+
+flop_tempogram |>
+  ggplot(aes(x = TIME, y = VALUE)) +
+  geom_line() +
+  xlim(0, 30) +                         # Adjust the limits to the desired time range
+  theme_minimal() +
+  labs(x = "Time (s)", y = "Novelty")
+

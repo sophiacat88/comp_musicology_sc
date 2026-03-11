@@ -3,7 +3,7 @@
     "path": "~/git/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "190232542",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1772208149783.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "17,92",
-        "scrollLine": "2"
+        "cursorPosition": "16,0",
+        "scrollLine": "3"
     },
     "folds": "",
     "lastKnownWriteTime": 1772210149,
