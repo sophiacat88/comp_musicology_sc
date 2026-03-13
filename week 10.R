@@ -2,7 +2,7 @@ library(tidyverse)
 library(compmus)
 
 Dhun <- read_csv("/Users/sophiacatranis/Downloads/dhun-pitches.csv")
-twentyfive <- read_csv("/Users/sophiacatranis/Downloads/year-2025-pitches.csv")
+flop <- read_csv("dataset/flop_pitches.csv")
 
 
 circshift <- function(v, n) {
@@ -91,11 +91,27 @@ key_templates <-
     "D#:min", circshift(minor_key, 3)
   )
 
-twentyfive |> 
+flop |> 
   compmus_wrangle_chroma() |> 
   filter(row_number() %% 50L == 0L) |> 
   compmus_match_pitch_template(
     key_templates,         # Change to chord_templates if desired
+    method = "euclidean",  # Try different distance metrics
+    norm = "manhattan"     # Try different norms
+  ) |>
+  ggplot(
+    aes(x = start + duration / 2, width = 50 * duration, y = name, fill = d)
+  ) +
+  geom_tile() +
+  scale_fill_viridis_c(guide = "none") +
+  theme_minimal() +
+  labs(x = "Time (s)", y = "")
+
+flop |> 
+  compmus_wrangle_chroma() |> 
+  filter(row_number() %% 50L == 0L) |> 
+  compmus_match_pitch_template(
+    chord_templates,         # Change to chord_templates if desired
     method = "euclidean",  # Try different distance metrics
     norm = "manhattan"     # Try different norms
   ) |>
