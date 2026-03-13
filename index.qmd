@@ -1,8 +1,8 @@
 ---
-title: "Computational musicology"
+title: "Computational Musicology Sophia Catranis"
 format:
   dashboard:
-    theme: zyphr
+    theme: lux   
 ---
 
 <script>
@@ -36,18 +36,14 @@ The object of this study is [**bassvictim flop (2024)**](https://youtu.be/CyW3c4
   <img src="images/flop_ssm_timbre.png" width="400" alt="aphex twin cepstrogram"> 
 </div>
 
-(1) there is a strong diagnaol line indicating a correlation between the same song comparison which is great ! 
+(1) there is a strong diagional line indicating a correlation between the same song comparison which is great ! 
 (2) the checkered lines also indicate that the songs information is showing a strong pattern
 
 ### Keys (week 10)
 
-<div style="display: flex; gap: 20px;"> 
-  <img src="images/flop_keygram.png" width="400" alt="aphex twin chromagram"> 
-  <img src="images/flop_chordogram.png" width="400" alt="aphex twin cepstrogram"> 
-</div>
+<img src="images/keygram.png" width="400" alt="keygram week 10"> 
 
-(1) the keygram centers around G# min and Bb min, suggesting this window being the tonal center.
-(2) certain patterns can be noticed. for instance, the c#min-centered tonal information is alternating for the whole track. at the same time, the F#min takes the lead during the other part of the phase. this information can provide insight for further chord-progression analysis.
+(1) this keygram shows a concentration within the range of 90 -110 seconds, suggesting that at the point in the song the music was at its peak frequency 
 
 ### Tempo (week 11)
 
@@ -63,4 +59,3 @@ The object of this study is [**bassvictim flop (2024)**](https://youtu.be/CyW3c4
 
 (3) graphi 3 tells us that the BPM was a multiple of 75 in the previous graph, 
 and in this graph shows us that the real tempo is most likely 150 BPM, due to a dense visual concentration on the heat map in that range. 
-

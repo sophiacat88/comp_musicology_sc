@@ -1,18 +1,61 @@
 ---
-title: "Week 9"
-output: html_document
+title: "Computational Musicology Sophia Catranis"
+format:
+  dashboard:
+    theme: lux   
 ---
 
-### Structure Analysis + Self-Similarity Matrices
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var target = "#overview";
+  if (window.location.hash !== target) {
+    window.location.hash = target;
+  }
+});
+</script>
+
+# Overview
 
 The object of this study is [**bassvictim flop (2024)**](https://youtu.be/CyW3c4GXipQ?si=3PxxSZyenU0eu7rf). Several operations have been performed. In particular, two temporal features: *(1)* **a chromatic analysis**, in which pitch information was charted in time; *(2)* **a timbre analysis**, which charts mel-frequencies information in time. The other part covers temporal self-similarity by utilizing **self-similarity matrices** for *(3)* **chromatic** features, and *(4)* **timbre-based** features.
 
-### bassvictim flop
+# flop
+
+## Analysis Views {.tabset}
+
+### Chroma, Timbre (week 8)
 
 <div style="display: flex; gap: 20px;"> 
-  <img src="images/flop_ssm_chroma.png" width="400" alt="flop chromagram"> 
-  <img src="images/flop_ssm_timbre.png" width="400" alt="flop cepstrogram"> 
+  <img src="images/flop_chroma.png" width="400" alt="aphex twin chromagram"> 
+  <img src="images/flop_timbre.png" width="400" alt="aphex twin cepstrogram"> 
 </div>
 
-(1) there is a strong diagnaol line indicating a correlation between the same song comparison which is great ! 
+### SSMs (week 9)
+
+<div style="display: flex; gap: 20px;"> 
+  <img src="images/flop_ssm_chroma.png" width="400" alt="aphex twin chromagram"> 
+  <img src="images/flop_ssm_timbre.png" width="400" alt="aphex twin cepstrogram"> 
+</div>
+
+(1) there is a strong diagional line indicating a correlation between the same song comparison which is great ! 
 (2) the checkered lines also indicate that the songs information is showing a strong pattern
+
+### Keys (week 10)
+
+<img src="images/keygram.png" width="400" alt="keygram week 10"> 
+
+(1) this keygram shows a concentration within the range of 90 -110 seconds, suggesting that at the point in the song the music was at its peak frequency 
+
+### Tempo (week 11)
+
+<div style="display: flex; gap: 20px;"> 
+  <img src="images/flop_novelty.png" width="400" alt="aphex twin chromagram"> 
+  <img src="images/flop_act.png" width="400" alt="aphex twin cepstrogram"> 
+  <img src="images/flop_dft.png" width="400" alt="aphex twin cepstrogram">
+</div>
+
+(1) graph 1 shows high transients in the begining of the song because it is the intro, and then there is also a spike later because of the chorus.
+
+(2) graph 2 shows us that the BPM does not change and its because it is an electronic song, composed using a sequencer making it rythmically perfect. 
+
+(3) graphi 3 tells us that the BPM was a multiple of 75 in the previous graph, 
+and in this graph shows us that the real tempo is most likely 150 BPM, due to a dense visual concentration on the heat map in that range. 
