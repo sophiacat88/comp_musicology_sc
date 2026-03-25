@@ -2,8 +2,9 @@
 title: "Computational Musicology Sophia Catranis"
 format:
   dashboard:
-    theme: lux   
----
+    theme: lux 
+--- 
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
