@@ -52,3 +52,10 @@ basspunk_dist |>
   dendro_data() |>
   ggdendrogram()
 
+heatmaply(
+  basspunk_juice,
+  hclustfun = hclust,
+  hclust_method = "average",  # Change for single, average, or complete linkage.
+  dist_method = "euclidean"
+)
+

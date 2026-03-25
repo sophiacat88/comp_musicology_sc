@@ -64,6 +64,9 @@ and in this graph shows us that the real tempo is most likely 150 BPM, due to a 
 
 <div style="display: flex; gap: 20px;"> 
   <img src="images/basspunk_dendogram.png" width="400" alt="Basspunk Dendogram"> 
+  <img src="images/basspunk_heatmap.png" width="400" alt="Basspunk Features Heatmap"> 
+</div>
 
-(1) The Diagram above shows that most tracks cluster around the core group, 'I Like it', 'Flop', and 'Air on a G string'. 
+(1) The Dendogram above shows that most tracks cluster around the core group, 'I Like it', 'Flop', and 'Air on a G string'. 
+(2) The Heatmap above shows the features of the album Basspunk (Bassvictim, 2024) and reflects the song 'As Long As' clusters the highest degree of speechiness, and the song 'L-ON-D-ON rmx' has the highest degree of the liveness feature. 
 
