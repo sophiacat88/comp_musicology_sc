@@ -59,3 +59,11 @@ The object of this study is [**bassvictim flop (2024)**](https://youtu.be/CyW3c4
 
 (3) graphi 3 tells us that the BPM was a multiple of 75 in the previous graph, 
 and in this graph shows us that the real tempo is most likely 150 BPM, due to a dense visual concentration on the heat map in that range. 
+
+### Hierarchical Clustering (week 12)
+
+<div style="display: flex; gap: 20px;"> 
+  <img src="images/basspunk_dendogram.png" width="400" alt="Basspunk Dendogram"> 
+
+(1) The Diagram above shows that most tracks cluster around the core group, 'I Like it', 'Flop', and 'Air on a G string'. 
+
