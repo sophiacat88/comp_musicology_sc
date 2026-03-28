@@ -70,7 +70,7 @@ ul.task-list li input[type="checkbox"] {
         
       </div>
     </div>
-<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-overview" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#overview" data-scrolling="false" href="#overview" aria-controls="overview" aria-selected="true"><span class="nav-link-text">Overview</span></a></li><li class="nav-item" role="presentation"><a id="tab-flop" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#flop" data-scrolling="false" href="#flop" aria-controls="flop" aria-selected="false"><span class="nav-link-text">flop</span></a></li></ul></div></div>
+<div id="dashboard-collapse" class="navbar-collapse collapse"><ul class="navbar-nav navbar-nav-scroll me-auto" role="tablist"><li class="nav-item" role="presentation"><a id="tab-overview" class="nav-link active" data-bs-toggle="tab" role="tab" data-bs-target="#overview" data-scrolling="false" href="#overview" aria-controls="overview" aria-selected="true"><span class="nav-link-text">Overview</span></a></li><li class="nav-item" role="presentation"><a id="tab-personal-portfolio" class="nav-link" data-bs-toggle="tab" role="tab" data-bs-target="#personal-portfolio" data-scrolling="false" href="#personal-portfolio" aria-controls="personal-portfolio" aria-selected="false"><span class="nav-link-text">Personal Portfolio</span></a></li></ul></div></div>
 </nav>
 </header>
 <div class="page-layout-custom quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill quarto-dashboard-pages">  
@@ -88,7 +88,22 @@ document.addEventListener("DOMContentLoaded", function () {
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<p>The object of this study is <a href="https://youtu.be/CyW3c4GXipQ?si=3PxxSZyenU0eu7rf"><strong>bassvictim flop (2024)</strong></a>. Several operations have been performed. In particular, two temporal features: <em>(1)</em> <strong>a chromatic analysis</strong>, in which pitch information was charted in time; <em>(2)</em> <strong>a timbre analysis</strong>, which charts mel-frequencies information in time. The other part covers temporal self-similarity by utilizing <strong>self-similarity matrices</strong> for <em>(3)</em> <strong>chromatic</strong> features, and <em>(4)</em> <strong>timbre-based</strong> features.</p>
+<strong>Background</strong>
+<p>For this project, I constructed a corpus centred around the album Basspunk (2024) by Bassvictim. I selected tracks from this album as a focal point due to its distinctive sonic identity and its positioning within contemporary electronic music. The album blends elements of bass-heavy production, experimental textures, and club-oriented structures, making it a compelling case study for computational analysis. To contextualise these tracks, they were analysed alongside the second album, Unknown Pleasures (1979) by Joy Division, allowing for comparative insights into how Basspunk aligns with or diverges from the band that inspired their experimental sound. This approach enables an exploration of stylistic identity through curatorial selection and computational analytical framing.</p>
+<strong>Track-Level Features</strong>
+<p>At the level of global audio features (e.g., valence, energy, danceability), tracks from Basspunk display a distinctive profile relative to the Unknown Pleasures. In particular, they tend to exhibit [e.g., lower valence and higher energy], suggesting a sound that is intense and driving, yet not conventionally “positive” in emotional tone. This combination is characteristic of many experimental electronic genres, where affect is conveyed through tension and texture rather than melodic brightness. These feature-level differences indicate that Basspunk occupies a specific region within the broader musical landscape, aligning more closely with underground or genre-blurring styles than the conventions of the post punk style influenced by Joy Divisions Unknown Pleasures.</p>
+<strong>Chroma Features (Pitch)</strong>
+<p>Chroma analysis reveals insights into the harmonic organisation of the Basspunk tracks. Compared to the Unknown Pleasures, these tracks show [e.g., less stable tonal centres or more evenly distributed pitch class activity], suggesting a reduced emphasis on traditional harmonic progression. This may reflect a compositional focus on timbre and rhythm over pitch-driven structure, which is common in bass-oriented electronic music. As a result, harmonic ambiguity emerges as a defining feature, contributing to a sense of unpredictability and reinforcing the experimental character of the album.</p>
+<strong>Loudness (Volume)</strong>
+<p>Loudness features indicate that Basspunk tracks generally maintain [e.g., high overall loudness with limited dynamic fluctuation], consistent with production practices in electronic and club music contexts. Compared to the class corpus, which may include more dynamically varied tracks, this results in a more compressed and consistently intense listening experience. While this enhances impact and energy, it may also reduce contrast between sections, suggesting that intensity is achieved through sustained pressure rather than dynamic variation.</p>
+<strong>Timbre Features</strong>
+<p>Timbre analysis highlights the importance of sound design in shaping the identity of Basspunk. The tracks tend to occupy a distinct timbral space characterised by [e.g., synthetic textures, heavy low-frequency content, and limited acoustic instrumentation]. This differentiates them from many tracks in the class corpus that may rely more heavily on traditional instruments or broader timbral palettes. This emphasis on texture over instrumentation suggests that timbre plays a central role in defining genre and style within this corpus.</p>
+<strong>Temporal Features (Duration, Rhythm, Structure)</strong>
+<p>Temporal analysis reveals that Basspunk tracks are structured around [e.g., steady tempos, repetitive rhythmic patterns, and loop-based forms]. Compared to the class corpus, these tracks may exhibit less variation in metre or structural segmentation, instead prioritising rhythmic consistency and groove. This structural approach is effective in maintaining danceability and immersion, although it may limit the degree of contrast or narrative development across a track.</p>
+<strong>Clustering</strong>
+<p>Clustering analysis using a combination of audio features (e.g., energy, valence, timbre) shows that Basspunk tracks tend to group closely together, forming a relatively cohesive cluster within the feature space. This suggests a strong internal stylistic consistency across the album. At the same time, the degree to which this cluster overlaps with or separates from other tracks in the class corpus provides insight into genre boundaries. Where separation occurs, it indicates that Basspunk may occupy a more specialized or less conventional stylistic niche.</p>
+<strong>Contribution</strong>
+<p>This analysis demonstrates how computational methods can be used to investigate the stylistic identity of a curated musical corpus. By focusing on Basspunk in relation to a broader data set, it becomes possible to identify the features that define its sound and distinguish it from other musical contexts. These findings may be of interest to musicologists studying contemporary electronic genres, as well as listeners or curators seeking to understand how specific sonic characteristics relate to broader stylistic categories. However, the analysis is shaped by several assumptions, including the reliability of Spotify’s feature extraction and the representativeness of the class corpus. As such, conclusions should be understood as indicative rather than definitive, highlighting both the utility and the limitations of computational approaches to music analysis.</p>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
     <template>Expand</template>
@@ -98,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
 </div>
 </div>
-<div id="flop" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-flop">
+<div id="personal-portfolio" class="dashboard-page tab-pane grid-skip html-fill-item html-fill-container" data-orientation="rows" aria-labelledby="tab-personal-portfolio">
 <div class="html-fill-item html-fill-container bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card tabset html-fill-item html-fill-container bslib-card" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-header dashboard-card-no-title bslib-navs-card-title">
@@ -115,7 +130,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <div style="display: flex; gap: 20px;" class="html-fill-item html-fill-container">
-<p><img src="images/basspunk_histogram.png" width="400" alt="Basspunk Histogram"> <img src="images/flop_chroma.png" width="400" alt="Flop chromagram"> <img src="images/flop_timbre.png" width="400" alt="Flop cepstrogram"></p>
+<p><img src="images/basspunk_histogram.png" alt="Basspunk Histogram" width="400"> <img src="images/flop_chroma.png" alt="Flop chromagram" width="400"> <img src="images/flop_timbre.png" alt="Flop cepstrogram" width="400"></p>
 </div>
 <ol type="1">
 <li>The Histogram above reflects the album ‘Basspunk’ (Bassvictim, 2024) and shows the highest count reached is 4 measures, at 0.95 normalized amplitude.</li>
@@ -134,7 +149,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <div style="display: flex; gap: 20px;" class="html-fill-item html-fill-container">
-<p><img src="images/flop_ssm_chroma.png" width="400" alt="aphex twin chromagram"> <img src="images/flop_ssm_timbre.png" width="400" alt="aphex twin cepstrogram"></p>
+<p><img src="images/flop_ssm_chroma.png" alt="aphex twin chromagram" width="400"> <img src="images/flop_ssm_timbre.png" alt="aphex twin cepstrogram" width="400"></p>
 </div>
 <ol type="1">
 <li>there is a strong diagional line indicating a correlation between the same song comparison which is great !</li>
@@ -153,7 +168,7 @@ grid-auto-rows: minmax(0, 1fr);">
 grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<img src="images/keygram.png" width="400" alt="keygram week 10">
+<img src="images/keygram.png" alt="keygram week 10" width="400">
 <ol type="1">
 <li>this keygram shows a concentration within the range of 90 -110 seconds, suggesting that at the point in the song the music was at its peak frequency</li>
 </ol>
@@ -171,7 +186,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <div style="display: flex; gap: 20px;" class="html-fill-item html-fill-container">
-<p><img src="images/flop_novelty.png" width="400" alt="aphex twin chromagram"> <img src="images/flop_act.png" width="400" alt="aphex twin cepstrogram"> <img src="images/flop_dft.png" width="400" alt="aphex twin cepstrogram"></p>
+<p><img src="images/flop_novelty.png" alt="aphex twin chromagram" width="400"> <img src="images/flop_act.png" alt="aphex twin cepstrogram" width="400"> <img src="images/flop_dft.png" alt="aphex twin cepstrogram" width="400"></p>
 </div>
 <ol type="1">
 <li><p>graph 1 shows high transients in the begining of the song because it is the intro, and then there is also a spike later because of the chorus.</p></li>
@@ -192,7 +207,7 @@ grid-auto-rows: minmax(0, 1fr);">
 <div class="card html-fill-item html-fill-container bslib-card" data-fill="false" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
 <div style="display: flex; gap: 20px;" class="html-fill-item html-fill-container">
-<p><img src="images/basspunk_dendogram.png" width="400" alt="Basspunk Dendogram"> <img src="images/basspunk_heatmap.png" width="400" alt="Basspunk Features Heatmap"></p>
+<p><img src="images/basspunk_dendogram.png" alt="Basspunk Dendogram" width="400"> <img src="images/basspunk_heatmap.png" alt="Basspunk Features Heatmap" width="400"></p>
 </div>
 <ol type="1">
 <li>The Dendogram above shows that most tracks cluster around the core group, ‘I Like it’, ‘Flop’, and ‘Air on a G string’.</li>
