@@ -45,5 +45,13 @@ unknown_pleasures_juice <-
   juice() |>
   column_to_rownames("Track Name")
 
+unknown_pleasures_dist <- dist(unknown_pleasures_juice, method = "euclidean")
+
+heatmaply(
+  unknown_pleasures_juice,
+  hclustfun = hclust,
+  hclust_method = "average",  # Change for single, average, or complete linkage.
+  dist_method = "euclidean"
+)
 
 

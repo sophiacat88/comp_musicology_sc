@@ -245,11 +245,32 @@ Novelty Function Tempogram - Joy Division - Disorder, Unknown Pleasures
     range.
 :::
 
-### Hierarchical Clustering (week 12)
+### Chapter V. 
 
 ::: {style="display: flex; gap: 20px;"}
+
+Week 12: Hierarchical Clustering
+
+Bassvictim, Basspunk (2024) 
+
+Bassvictim Dendogram 
+
 <img src="images/basspunk_dendogram.png" alt="Basspunk Dendogram" width="400"/>
+
+Bassvictim Heatmap 
+
 <img src="images/basspunk_heatmap.png" alt="Basspunk Features Heatmap" width="400"/>
+
+Joy Division, Unknown Pleasures (1979) 
+
+Joy Division Dendogram 
+
+<img src="images/unknown_pleasures_dendogramp.png" alt="Unknown Pleasures Dendogram" width="400"/>
+
+Joy Division Heatmap 
+
+<img src="images/disorder_heatmap.png" alt="Unknown Pleasures Heatmap" width="400"/>
+
 :::
 
 (1) The Dendogram above shows that most tracks cluster around the core
