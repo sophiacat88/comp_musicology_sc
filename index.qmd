@@ -185,9 +185,7 @@ Joy Division - Disorder, Unknown Pleasures (1979)
 <img src="images/disorder_timbre_cepstrogram.png" alt="Disorder Timbre Cepstrogram" width="400"/>
 
 
-Self Similarity Matrices 
-
-Timbre 
+Self Similarity Matrices - Timbre 
 
 Bassvictim - Flop, Basspunk (2024) 
 
