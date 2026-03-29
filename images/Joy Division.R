@@ -1,29 +1,49 @@
-library(tidyverse)
-library(compmus) 
+library(tidyverse) 
+library(tidymodels)
+library(ggdendro)
+library(heatmaply)
 
-flop_pitch <- read_csv("/Users/sophiacatranis/Desktop/main-portfolio/dataset/flop_pitches.csv")
-#flop_timbre <- read_csv("/Users/sophiacatranis/Desktop/main-portfolio/dataset/flop_timbre.csv")
-#disorder_pitch <- read_csv("/Users/sophiacatranis/Desktop/main-portfolio/disorder_pitch.csv")
-#disorder_timbre <- read_csv("/Users/sophiacatranis/Desktop/main-portfolio/dataset/disorder_timbre copy.csv")
+library(compmus)
+
+get_conf_mat <- function(fit) {
+  outcome <- .get_tune_outcome_names(fit)
+  fit |> 
+    collect_predictions() |> 
+    conf_mat(truth = outcome, estimate = .pred_class)
+}  
+
+get_pr <- function(fit) {
+  fit |> 
+    conf_mat_resampled() |> 
+    group_by(Prediction) |> mutate(precision = Freq / sum(Freq)) |> 
+    group_by(Truth) |> mutate(recall = Freq / sum(Freq)) |> 
+    ungroup() |> filter(Prediction == Truth) |> 
+    select(class = Prediction, precision, recall)
+}  
+
+unknown_pleasures <- read_csv("/Users/sophiacatranis/Desktop/coding/Unknown_Pleasures.csv")
+
+unknown_pleasures_juice <-
+  recipe(
+    `Track Name` ~
+      Danceability +
+      Energy +
+      Loudness +
+      Speechiness +
+      Acousticness +
+      Instrumentalness +
+      Liveness +
+      Valence +
+      Tempo +
+      `Duration (ms)`,
+    data = unknown_pleasures
+  ) |>
+  step_center(all_predictors()) |>
+  step_scale(all_predictors()) |> 
+  # step_range(all_predictors()) |> 
+  prep(unknown_pleasures |> mutate(`Track Name` = str_trunc(`Track Name`, 36))) |>
+  juice() |>
+  column_to_rownames("Track Name")
 
 
-flop_pitch |>
-  compmus_wrangle_pitches() |> 
-  filter(row_number() %% 50L == 0L) |> 
-  mutate(pitches = map(pitches, compmus_normalise, "euclidean")) |>
-  compmus_self_similarity(pitches, "cosine") |> 
-  ggplot(
-    aes(
-      x = xstart + xduration / 2,
-      width = 50 * xduration,
-      y = ystart + yduration / 2,
-      height = 50 * yduration,
-      fill = d
-    )
-  ) +
-  geom_tile() +
-  coord_fixed() +
-  scale_fill_viridis_c(guide = "none") +
-  theme_classic() +
-  labs(x = "", y = "")
 

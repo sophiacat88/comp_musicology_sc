@@ -127,7 +127,7 @@ computational approaches to music analysis.
 
 ## Analysis Views {.tabset style="color: Black"}
 
-### Histogram, Chroma, Timbre (week 7 & 8)
+### Chapter I.
 
 ::: {style="display: flex; gap: 25px;"}
 Week 7 - Audio Visualizations
@@ -161,10 +161,10 @@ Chromagram Bassvictim/Joy Division
 <img src="images/flop_disorder_chromagram.png" alt="Unknown Pleasures Energy vs Valence" width="400"/>
 :::
 
-### SSMs (week 9)
+### Chapter II.
 
-::::: {style="display: flex; gap: 20px;"}
-Structure Analysis - Self Similarity Matrices
+::: {style="display: flex; gap: 20px;"}
+Week 9: Structure Analysis - Self Similarity Matrices
 
 Bassvictim - Flop, Basspunk (2024)
 
@@ -180,38 +180,56 @@ Bassvictim - Flop, Basspunk (2024)
 
 <img src="images/flop_timbre_cepstrogram.png" alt="Flop Timbre Cepstrogram" width="400"/>
 
-Joy Division - Disorder, Unknown Pleasures (1979) 
+Joy Division - Disorder, Unknown Pleasures (1979)
 
 <img src="images/disorder_timbre_cepstrogram.png" alt="Disorder Timbre Cepstrogram" width="400"/>
 
+Self Similarity Matrices - Timbre
 
-Self Similarity Matrices - Timbre 
-
-Bassvictim - Flop, Basspunk (2024) 
+Bassvictim - Flop, Basspunk (2024)
 
 <img src="images/flop_ssm_timbre.png" alt="Flop Timbre SSM" width="400"/>
 
-Joy Division - Disorder, Unknown Pleasures (1979) 
+Joy Division - Disorder, Unknown Pleasures (1979)
 
 <img src="images/disorder_ssm_timbre.png" alt="Disorder Timbre SSM" width="400"/>
-
 :::
 
-### Keys (week 10)
+### Chapter III.
 
-<img src="images/keygram.png" alt="keygram week 10" width="400"/>
+Week 10: Chord Estimation - Chordograms
 
-(1) this keygram shows a concentration within the range of 90 -110
-    seconds, suggesting that at the point in the song the music was at
-    its peak frequency
+1.  Bassvictim - Flop, Basspunk (2024)
 
-### Tempo (week 11)
+<img src="images/flop_chordogram.png" alt="Flop Chordogram Chroma Features" width="400"/>
+
+2.  Joy Division - Disorder, Unknown Pleasures (1979)
+
+<img src="images/disorder_chordogram.png" alt="Disorder Chordogram Chroma Features" width="400"/>
+
+### Chapter IIII.
 
 ::: {style="display: flex; gap: 20px;"}
-<img src="images/flop_novelty.png" alt="aphex twin chromagram" width="400"/>
-<img src="images/flop_act.png" alt="aphex twin cepstrogram" width="400"/>
-<img src="images/flop_dft.png" alt="aphex twin cepstrogram" width="400"/>
-:::
+Week 11: Novelty Functions and Tempograms
+
+Bassvictim - Flop, Basspunk (2024)
+
+Novelty Function Tempogram I.
+
+<img src="images/flop_novelty.png" alt="Flop Novelty Tempogram" width="400"/>
+
+Tempogram II.
+
+<img src="images/flop_act.png" alt="Flop Tempogram ACT" width="400"/>
+
+Tempogram III.
+
+<img src="images/flop_dft.png" alt="Flop Tempogram DFT" width="400"/>
+
+Novelty Function Tempogram - Joy Division - Disorder, Unknown Pleasures
+(1979)
+
+<img src="images/disorder_novelty.png" alt="Disorder Novelty Function Tempogram" width="400"/>
 
 (1) graph 1 shows high transients in the begining of the song because it
     is the intro, and then there is also a spike later because of the
@@ -225,6 +243,7 @@ Joy Division - Disorder, Unknown Pleasures (1979)
     graph, and in this graph shows us that the real tempo is most likely
     150 BPM, due to a dense visual concentration on the heat map in that
     range.
+:::
 
 ### Hierarchical Clustering (week 12)
 
@@ -238,5 +257,4 @@ Joy Division - Disorder, Unknown Pleasures (1979)
 (2) The Heatmap above shows the features of the album Basspunk
     (Bassvictim, 2024) and reflects the song 'As Long As' clusters the
     highest degree of speechiness, and the song 'L-ON-D-ON rmx' has the
-    highest degree of the liveness feature.
-:::::
+    highest degree of the liveness feature. :::::
