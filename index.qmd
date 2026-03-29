@@ -130,7 +130,6 @@ computational approaches to music analysis.
 ### Histogram, Chroma, Timbre (week 7 & 8)
 
 ::: {style="display: flex; gap: 25px;"}
-
 Week 7 - Audio Visualizations
 
 Bassvictim - Basspunk (2024)
@@ -160,22 +159,45 @@ Joy Division - Disorder, Unknown Pleasures (1979)
 Chromagram Bassvictim/Joy Division
 
 <img src="images/flop_disorder_chromagram.png" alt="Unknown Pleasures Energy vs Valence" width="400"/>
-
-
 :::
-
 
 ### SSMs (week 9)
 
-::: {style="display: flex; gap: 20px;"}
-<img src="images/flop_ssm_chroma.png" alt="aphex twin chromagram" width="400"/>
-<img src="images/flop_ssm_timbre.png" alt="aphex twin cepstrogram" width="400"/>
-:::
+::::: {style="display: flex; gap: 20px;"}
+Structure Analysis - Self Similarity Matrices
 
-(1) there is a strong diagional line indicating a correlation between
-    the same song comparison which is great !
-(2) the checkered lines also indicate that the songs information is
-    showing a strong pattern
+Bassvictim - Flop, Basspunk (2024)
+
+<img src="images/flop_ssm_chroma_timbre.png" alt="Flop SSM Chroma, Timbre" width="400"/>
+
+Joy Division - Disorder, Unknown Pleasures (1979)
+
+<img src="images/disorder_timbre1.png" alt="Disorder SSM Chroma, Timbre" width="400"/>
+
+Cepstrograms
+
+Bassvictim - Flop, Basspunk (2024)
+
+<img src="images/flop_timbre_cepstrogram.png" alt="Flop Timbre Cepstrogram" width="400"/>
+
+Joy Division - Disorder, Unknown Pleasures (1979) 
+
+<img src="images/disorder_timbre_cepstrogram.png" alt="Disorder Timbre Cepstrogram" width="400"/>
+
+
+Self Similarity Matrices 
+
+Timbre 
+
+Bassvictim - Flop, Basspunk (2024) 
+
+<img src="images/flop_ssm_timbre.png" alt="Flop Timbre SSM" width="400"/>
+
+Joy Division - Disorder, Unknown Pleasures (1979) 
+
+<img src="images/disorder_ssm_timbre.png" alt="Disorder Timbre SSM" width="400"/>
+
+:::
 
 ### Keys (week 10)
 
@@ -219,3 +241,4 @@ Chromagram Bassvictim/Joy Division
     (Bassvictim, 2024) and reflects the song 'As Long As' clusters the
     highest degree of speechiness, and the song 'L-ON-D-ON rmx' has the
     highest degree of the liveness feature.
+:::::
